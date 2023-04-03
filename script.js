@@ -6,6 +6,7 @@ let sobremesa = "";
 let valorPrato = 0;
 let valorBebidas = 0;
 let valorSobremesa = 0;
+ let vector = 0
 
 
 
@@ -50,14 +51,20 @@ function escolherSobremesa(seletor){
 
 function selecionarComidas(seletor){
     const removerClasse = document.querySelector('.comidas_selecionadas')
+   
     
     if (removerClasse !== null){
         removerClasse.classList.remove("comidas_selecionadas")
         quantidadeProdutos --;
     }
+    if( vector === 1){
+        document.querySelector('.vector').classList.remove("ativar_vector")
+        console.log(document.querySelector('.vector'))
+    }
     
     
-    
+    document.querySelector('.vector').classList.add("ativar_vector")
+    vector = 1
     seletor.classList.add("comidas_selecionadas");
     quantidadeProdutos ++;
     
@@ -88,13 +95,12 @@ function selecionarSobremesa(seletor){
         const botaoAtivado = document.querySelector('.Fazer_pedido');
         botaoAtivado.innerHTML = 'Fechar Pedido';
         botaoAtivado.classList.add("botao_ativado");
+        habilitarBotao(botaoAtivado)
     }
 }
 
 function habilitarBotao(botao){
-    
-        botao.disabled = true;    
-    
+    botao.disabled = false;
 }
 
 
@@ -104,12 +110,15 @@ function menssagemWapp (){
     let total = valorTotal.toFixed(2)
     let menssagem; 
     menssagem =  
-    "Olá, gostaria de fazer o pedido:" +
-    "- Prato: " + prato +
-    "- Bebida: " + bebidas +
-    "- Sobremesa: " + sobremesa +
+    "Olá, gostaria de fazer o pedido:" + 
+    "- Prato: " + prato + 
+    
+    "- Bebida: " + bebidas  + 
+    
+    "- Sobremesa: " + sobremesa  + 
+    
     "- Total:  R$ " + total;
-    window.open("https://wa.me/+55889999999999?text=" + menssagem)
+    window.open("https://wa.me/+5588999999999?text=" + menssagem)
 }
 
 /* */

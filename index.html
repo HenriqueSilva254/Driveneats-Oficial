@@ -11,142 +11,126 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-        <nav>
+    <header>
             <div class="Titulo_navbar">
                 <h1>DrivenEats</h1>
                 <p>Sua comida em 6 minutos</p>
             </div>
-        </nav>
-        <!---->
-
-        <!-- -->
-    
-        <div class="ordens_pedidos">
-            <h1 class="pratos importante"> Primeiro, seu prato</h1>
-            <h1 class="bebidas importante">Agora, sua bebida</h1>
-            <h1 class="sobremesas importante">Por fim, sua sobremesa</h1>
+    </header>
+    <main>
+      <div class="content">
+        <h2>Primeiro, seu prato</h2>
+        <div class="container">
+          <div class="contentCard">
+            <div id="frango" class="card prato1" onclick="selecionarComidas(this), escolherPrato(this)">
+              <div class="produtos">
+                <img src="./imagens/frango.png" alt="">
+                <h3>Frango Yin Yang</h3>
+                <p>Um pouco de batata,</p>
+                <p>Um pouco de salada</p>
+                <div class="preco"><h4>R$ 33,90</h4><div class=""><img class="vector" src="./imagens/Vector.png" alt=""></div></div>
+              </div>
+            </div>
+            <div id="Lasanha" class="card prato2" onclick="selecionarComidas(this), escolherPrato(this)">
+              <div class="produtos">
+                <img src="./imagens/lasanha.jpg" alt="">
+                <h3>Lasanha</h3>
+                <p>molho de tomate,</p>
+                <p>presunto, queijo e carne</p>
+               <div class="preco"><h4>R$ 26,90</h4><div class="vector"><img src="./imagens/Vector.png" alt=""></div></div>
+              </div>
+            </div>
+            <div id="Salmao" class="card prato3" onclick="selecionarComidas(this), escolherPrato(this)">
+              <div class="produtos">
+                <img src="./imagens/salmao.jpg" alt="">
+                <h3>Salmao</h3>
+                <p>Salmao delicioso,</p>
+                <p>Recheado, Saboroso</p>
+               <div class="preco"><h4>R$ 20,90</h4><div class="vector"><img src="./imagens/Vector.png" alt=""></div></div>
+              </div>
+            </div>
+          </div>
         </div>
-            <div class="produtos1">
-                <div class="container_produtos1">
-                <div class="Pratos_Alacartes container">
-                    <img src="./imagens/frango.png" alt="">
-                    <br>
-                    <div class="informacoes_produtos">
-                        <h2>Frango Yin Yang</h2>
-                        <p class="descricao">Um pouco de batata, <br> um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                </div>
-                <div class="Pratos_Alacartes container">
-                    <img src="./imagens/frango.png" alt="">
-                    <br>
-                    <div class="informacoes_produtos">
-                        <h2>Frango Yin Yang</h2>
-                        <p class="descricao">Um pouco de batata, <br> um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                </div>
-                <div class="Pratos_Alacartes container">
-                    <img src="./imagens/frango.png" alt="">
-                    <br>
-                    <div class="informacoes_produtos">
-                        <h2>Frango Yin Yang</h2>
-                        <p class="descricao">Um pouco de batata, <br> um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                </div>
-                <div class="Pratos_Alacartes container">
-                    <img src="./imagens/frango.png" alt="">
-                    <br>
-                    <div class="informacoes_produtos">
-                        <h2>Frango Yin Yang</h2>
-                        <p class="descricao">Um pouco de batata, <br> um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                </div>
-                </div>
+        <h2>Agora, sua bebida</h2>
+        <div class="container food">
+          <div class="contentCard">
+            <div id="coca_lata" class="card bebida1" onclick="selecionarBebidas(this), escolherBebida(this)">
+              <div class="produtos">
+                <img src="./imagens/coca.png" alt="">
+                <h3>Coquinha gelada</h3>
+                <p>Lata 350ml</p>
+                <p></p>
+               <div class="preco"><h4>R$ 5,90</h4><img class="vector ocultar" src="./imagens/Vector.png" alt=""></div>
+              </div>
             </div>
+            <div id="fanta_lata" class="card bebida2" onclick="selecionarBebidas(this), escolherBebida(this)">
+              <div class="produtos">
+                <img src="./imagens/fanta.jpg" alt="">
+                <h3>Fanta geladinha</h3>
+                <p>Lata 350ml</p>
+                <p></p>
+               <div class="preco"><h4>R$ 4,90</h4><img class="vector ocultar" src="./imagens/Vector.png" alt=""></div>
+              </div>
+            </div>
+            <div id="soda_lata" class="card bebida3" onclick="selecionarBebidas(this), escolherBebida(this)">
+              <div class="produtos">
+                <img src="./imagens/soda.jpg" alt="">
+                <h3>Soda geladinha</h3>
+                <p>Lata 350ml</p>
+                <p></p>
+               <div class="preco"><h4>R$ 3,90</h4><img class="vector ocultar" src="./imagens/Vector.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <h2>Por fim, sua sobremesa</h2>
+        <div class="container food">
+          <div class="contentCard">
+            <div id="Pudim" class="card sobremesa1" onclick="selecionarSobremesa(this), escolherSobremesa(this)">
+              <div class="produtos">
+                <img src="./imagens/pudim.png" alt="">
+                <h3>Pudim</h3>
+                <p>Apenas pudim</p>
+                <p></p>
+               <div class="preco"><h4>R$ 11,90</h4><img class="vector ocultar" src="./imagens/Vector.png" alt=""></div>
+              </div>
+            </div>
+            <div id="Bolo" class="card sobremesa2" onclick="selecionarSobremesa(this), escolherSobremesa(this)">
+              <div class="produtos">
+                <img src="./imagens/bolo.jpg" alt="">
+                <h3>Bolo</h3>
+                <p>Delioco bolo de chocolate</p>
+                <p></p>
+               <div class="preco"><h4>R$ 22,90</h4><img class="vector ocultar" src="./imagens/Vector.png" alt=""></div>
+              </div>
+            </div>
+            <div id="Torta" class="card sobremesa3" onclick="selecionarSobremesa(this), escolherSobremesa(this)">
+              <div class="produtos">
+                <img src="./imagens/torta.jpg" alt="">
+                <h3>Torta</h3>
+                <p>Torta de ganache</p>
+                <p></p>
+               <div class="preco"><h4>R$ 14,90</h4><img class="vector ocultar" src="./imagens/Vector.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <button class="Fazer_pedido" onclick=" habilitarBotao(this), menssagemWapp()" disabled> Selecione os 3 itens <br>
+        para fechar o pedido</button>
+        <div class="opacidade_conta ocultar">
+          <div class="valor_conta ocultar">
+          </div>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="/script.js"></script>
+  
 
-            <div class="container_produtos2">
-                <div class="Pratos_Alacartes container">
-                    <img src="./imagens/frango.png" alt="">
-                    <br>
-                    <div class="informacoes_produtos">
-                        <h2>Frango Yin Yang</h2>
-                        <p class="descricao">Um pouco de batata, <br> um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                </div>
-                <div class="Pratos_Alacartes container">
-                    <img src="./imagens/frango.png" alt="">
-                    <br>
-                    <div class="informacoes_produtos">
-                        <h2>Frango Yin Yang</h2>
-                        <p class="descricao">Um pouco de batata, <br> um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                </div>
-                <div class="Pratos_Alacartes container">
-                    <img src="./imagens/frango.png" alt="">
-                    <br>
-                    <div class="informacoes_produtos">
-                        <h2>Frango Yin Yang</h2>
-                        <p class="descricao">Um pouco de batata, <br> um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                </div>
-                <div class="Pratos_Alacartes container">
-                    <img src="./imagens/frango.png" alt="">
-                    <br>
-                    <div class="informacoes_produtos">
-                        <h2>Frango Yin Yang</h2>
-                        <p class="descricao">Um pouco de batata, <br> um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container_produtos3">
-                <div class="Pratos_Alacartes container">
-                    <img src="./imagens/frango.png" alt="">
-                    <br>
-                    <div class="informacoes_produtos">
-                        <h2>Frango Yin Yang</h2>
-                        <p class="descricao">Um pouco de batata, <br> um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                </div>
-                <div class="Pratos_Alacartes container">
-                    <img src="./imagens/frango.png" alt="">
-                    <br>
-                    <div class="informacoes_produtos">
-                        <h2>Frango Yin Yang</h2>
-                        <p class="descricao">Um pouco de batata, <br> um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                </div>
-                <div class="Pratos_Alacartes container">
-                    <img src="./imagens/frango.png" alt="">
-                    <br>
-                    <div class="informacoes_produtos">
-                        <h2>Frango Yin Yang</h2>
-                        <p class="descricao">Um pouco de batata, <br> um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                </div>
-                <div class="Pratos_Alacartes container">
-                    <img src="./imagens/frango.png" alt="">
-                    <br>
-                    <div class="informacoes_produtos">
-                        <h2>Frango Yin Yang</h2>
-                        <p class="descricao">Um pouco de batata, <br> um pouco de salada</p>
-                        <p class="preco">R$ 14,90</p>
-                    </div>
-                </div>
-            </div>
-    <script src="script.js">
-    </script>
 </body>
+
 </html>

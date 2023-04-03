@@ -88,6 +88,7 @@ h2 {
 }
 .container {
     height: auto;
+    overflow-y: hidden;
     overflow-x: scroll;
     margin-bottom: 27px;
 }
@@ -186,17 +187,20 @@ footer {
 .ocultar {
 display: none;	
 }
-.ocultar_vector {
-    opacity: 0;
-}
+
 .vector, .vector2, .vector3 {
     height: 15.4375px;
     width: 15.4375px;
     left: 1.78125px;
     top: 1.78125px;
     border-radius: 0px;
-
+    opacity: 0;
 }
+.ativar_vector {
+    display: none;
+}
+/* Nao consegui colocar o icone */ 
+
 .preco {
     padding-top: 12px;
     height: 20px;
